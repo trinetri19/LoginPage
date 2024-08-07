@@ -4,13 +4,25 @@
     
     h1{
         font-size: 4rem !important;
-        color: rgb(161, 0, 91) !important;
+        color: rgb(171, 29, 110) !important;
       text-align: center;
+    }
+    @media(max-width:600px){
+        
+        .col-3{
+            width:15rem !important;
+        }
+    }
+
+    @media(min-width:600px)and (max-width:1500px){
+        .col-3{
+            width:20rem !important;
+        }
     }
 </style>
 
 <div class="row mt-5">
-    <div class="col-4 mt-5 offset-4">
+    <div class="col-3 offset-1 offset-sm-2 offset-md-2 offset-lg-4 mt-5">
         <h1>WELCOME <%= user.username%></h1>
     </div>
 </div>
