@@ -1,0 +1,39 @@
+
+
+
+.navbar{
+    background-color: #b395b8 !important;
+    color:white !important;
+    font-size: 1.3rem !important;
+    font-weight: 600;
+}
+.navbar a{
+    color:white !important;
+}
+
+body{
+  
+    background-image: url(/images/loginPage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh !important;
+  
+}
+
+
+.footMain{
+height: 5vh !important;
+background-color: #b395b8 !important;
+text-align: center;
+padding: 0.2rem;
+color:rgb(213, 234, 255)
+}
+
+
+.btn{
+    color: aliceblue !important;
+    background-color: #7a6d7b !important;
+}
+.alert-success{
+    background-color: #a693a7 !important;
+}

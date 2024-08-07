@@ -1,0 +1,43 @@
+<%  layout("./layouts/boilerplate")%>
+
+<style>
+    .col-3{
+        border:1px solid black;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    @media(max-width:600px){
+        
+        .col-3{
+            width:15rem !important;
+        }
+    }
+
+    @media(min-width:600px)and (max-width:1500px){
+        .col-3{
+            width:20rem !important;
+        }
+    }
+</style>
+
+
+
+<div class="row mt-5">
+    <div class="col-3 offset-1 offset-sm-2 offset-md-2 offset-lg-4 mt-5">
+        <h2 class="offset-2 ">Login Here</h2>
+        <form action="/api/Page/login" method ="POST">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" name="username" class="form-control">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" name="password" class="form-control">
+            <button class="btn mt-4 offset-5">Login</button>
+        </form>
+
+        <p class="mt-3">Don't have an account, <a href="/api/Page/register">Register </a>Here</p>
+  
+    </div>
+</div>
